@@ -146,13 +146,13 @@ Simply run command `python task4.py`.
 
 ##### Rationale for the specific learning rates for each layer:
 1. Learning rate distribution
-    - Embeddings: $\text{base\_lr} * 0.9^{12}$
-    - Early Encoder Layers: $\text{base\_lr} * 0.9^{12 - n}$
-    - Middle Encoder Layers: $\text{base\_lr} * 0.9^{6-n}$
-    - Later Encoder Layers: $\text{base\_lr} * 0.9^n$
+    - Embeddings: base_lr * 0.9^12
+    - Early Encoder Layers: base_lr * 0.9^(12 - n)
+    - Middle Encoder Layers: base_lr * 0.9^(6 - n)
+    - Later Encoder Layers: base_lr * 0.9^n
     - Task Heads:
-        - Topic: $\text{base\_lr} * 1.2^n$
-        - Sentiment: $\text{base\_lr} * 0.8^n$
+        - Topic: base_lr * 1.2^n
+        - Sentiment: base_lr * 0.8^n
 
 2. Rationale for each layer:
     1) Embeddings:
