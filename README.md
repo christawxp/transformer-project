@@ -11,7 +11,7 @@ conda install conda-forge::transformers
 ```
 Otherwise, please refer to `requirements.txt`.
 
-### Task 1: Sentence Transformer Implementation
+### Sentence Transformer Implementation
 ##### How to run
 Simply run command `python task1.py`.
 
@@ -37,7 +37,7 @@ Simply run command `python task1.py`.
     - Batch processing support.
 
 
-### Task 2: Multi-Task Learning Expansion
+### Multi-Task Learning Expansion
 ##### How to run
 Simply run command `python task2.py`.
 
@@ -71,7 +71,7 @@ Simply run command `python task2.py`.
     - Combined optimizer for end-to-end training.
 
 
-### Task 3: Traning Considerations
+### Traning Considerations
 ##### Discuss the implications and advantages of each scenario and explain your rationale as to how the model should be trained given the following:
 1. If the entire network should be frozen.
     - Pros:
@@ -140,7 +140,7 @@ Simply run command `python task2.py`.
         - Progressive unfreezing allows fine-grained control.
         - Layer-wise learning rates respect parameter sensitivity.
 
-### Task 4
+### Layer-wise Learning Rate
 ##### How to run
 Simply run command `python task4.py`.
 
